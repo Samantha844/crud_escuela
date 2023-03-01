@@ -1,0 +1,905 @@
+{
+	"info": {
+		"_postman_id": "fc6a9d44-ff31-4ec5-a092-2b1bc0ace63a",
+		"name": "CRUD escuela",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23036967"
+	},
+	"item": [
+		{
+			"name": "Alumno",
+			"item": [
+				{
+					"name": "Obtener Id Alumno",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/alumno/obtener/id?id_alumno=7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"alumno",
+								"obtener",
+								"id"
+							],
+							"query": [
+								{
+									"key": "id_alumno",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar Alumno",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/alumno/guardar/?id_alumno=11&matricula=20191417&id_persona=11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"alumno",
+								"guardar",
+								""
+							],
+							"query": [
+								{
+									"key": "id_alumno",
+									"value": "11"
+								},
+								{
+									"key": "matricula",
+									"value": "20191417"
+								},
+								{
+									"key": "id_persona",
+									"value": "11"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Alumno",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/alumno/actualizar/?matricula=20191419&id_alumno=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"alumno",
+								"actualizar",
+								""
+							],
+							"query": [
+								{
+									"key": "matricula",
+									"value": "20191419"
+								},
+								{
+									"key": "id_alumno",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Alumno",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/alumno/eliminar/?id_alumno=8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"alumno",
+								"eliminar",
+								""
+							],
+							"query": [
+								{
+									"key": "id_alumno",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Asignatura",
+			"item": [
+				{
+					"name": "Obtener id_asignatura",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/asignatura/obtener/id?id_asignatura=456",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"asignatura",
+								"obtener",
+								"id"
+							],
+							"query": [
+								{
+									"key": "id_asignatura",
+									"value": "456"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar Asignatura",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/asignatura/guardar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"asignatura",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Asignatura",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/asignatura/actualizar?id_asignatura=214",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"asignatura",
+								"actualizar"
+							],
+							"query": [
+								{
+									"key": "id_asignatura",
+									"value": "214"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Asignatura",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/asignatura/eliminar/?id_asignatura=563",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"asignatura",
+								"eliminar",
+								""
+							],
+							"query": [
+								{
+									"key": "id_asignatura",
+									"value": "563"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Calificacion",
+			"item": [
+				{
+					"name": "Obtener Calificacion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/calificacion/obtener/id?id_calificacion=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"calificacion",
+								"obtener",
+								"id"
+							],
+							"query": [
+								{
+									"key": "id_calificacion",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar Calificacion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/calificacion/guardar?id_calificacion=55&semestre=9&materia=diseño",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"calificacion",
+								"guardar"
+							],
+							"query": [
+								{
+									"key": "id_calificacion",
+									"value": "55"
+								},
+								{
+									"key": "semestre",
+									"value": "9"
+								},
+								{
+									"key": "materia",
+									"value": "diseño"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Calificacion",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/calificacion/actualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"calificacion",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Calificacion",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/calificacion/eliminar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"calificacion",
+								"eliminar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Colegiatura",
+			"item": [
+				{
+					"name": "Obtener Colegiatura",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/colegiatura/obtener/id?id_colegiatura=45",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"colegiatura",
+								"obtener",
+								"id"
+							],
+							"query": [
+								{
+									"key": "id_colegiatura",
+									"value": "45"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar Colegiatura",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/colegiatura/guardar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"colegiatura",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar colegiatura",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/colegiatura/actualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"colegiatura",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Colegiatura",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/colegiatura/eliminar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"colegiatura",
+								"eliminar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Docente",
+			"item": [
+				{
+					"name": "Obtener Docente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/docente/obtener/id?id_docente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"docente",
+								"obtener",
+								"id"
+							],
+							"query": [
+								{
+									"key": "id_docente",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar Docente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/docente/guardar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"docente",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar docente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/docente/actualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"docente",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Docente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/docente/eliminar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"docente",
+								"eliminar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Grado",
+			"item": [
+				{
+					"name": "Obtener grado",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/grado/obtener/id?id_grado=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grado",
+								"obtener",
+								"id"
+							],
+							"query": [
+								{
+									"key": "id_grado",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar grado",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/grado/guardar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grado",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Grado",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/grado/actualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grado",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Grado",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/grado/eliminar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grado",
+								"eliminar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Grupo",
+			"item": [
+				{
+					"name": "Obtener Grupo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/grupo/obtener/id?id_grupo=A",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grupo",
+								"obtener",
+								"id"
+							],
+							"query": [
+								{
+									"key": "id_grupo",
+									"value": "A"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar Grupo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/grupo/guardar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grupo",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar grupo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/grupo/actualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grupo",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Grupo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/grupo/eliminar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grupo",
+								"eliminar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Persona",
+			"item": [
+				{
+					"name": "Persona",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idDatosFiscales\": 1,\r\n    \"idPaciente\": 10004547196,\r\n    \"rfcCliente\": \"PHH860630930\",\r\n    \"idTipoPersona\": 2,\r\n    \"idTipoCliente\": 1,\r\n    \"nombre\": \"PAULA\",\r\n    \"paterno\": \"HERNANDEZ\",\r\n    \"materno\": \"HERNANDEZ\",\r\n    \"nombreCompleto\": \"PAULA HERNANDEZ HERNANDEZ\",\r\n    \"correo\": \"gmartiez866@gmail.com\",\r\n    \"calle\": \"FCO I MADERO\",\r\n    \"noExterior\": 9,\r\n    \"noInterior\": null,\r\n    \"colonia\": \"EL CARMEN XALPATLAHUAYA\",\r\n    \"localidad\": null,\r\n    \"municipio\": null,\r\n    \"estado\": \"TLAXCALA\",\r\n    \"pais\": \"MEXICO\",\r\n    \"codigoPostal\": 90513,\r\n    \"fecha_modificacion\": \"2020-12-14 13:41:49.411\",\r\n    \"idCuenta\": null,\r\n    \"idRegimenFiscal\": null\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/persona/obtener/id?id_persona=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"persona",
+								"obtener",
+								"id"
+							],
+							"query": [
+								{
+									"key": "id_persona",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar Persona",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/persona/guardar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"persona",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Persona",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/persona/actualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"persona",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Persona",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/persona/eliminar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"persona",
+								"eliminar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tutor",
+			"item": [
+				{
+					"name": "Obtener Tutor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/tutor/obtener/id?id_tutor=78",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tutor",
+								"obtener",
+								"id"
+							],
+							"query": [
+								{
+									"key": "id_tutor",
+									"value": "78"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar Tutor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/tutor/guardar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tutor",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Tutor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/tutor/actualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tutor",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Tutor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/tutor/eliminar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tutor",
+								"eliminar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
